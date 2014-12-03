@@ -1,0 +1,15 @@
+<h1 class="title" data-bind="title"></h1>
+
+<ul id="events">
+  <li data-foreach-entry="entries">
+    <span class='entry-title-span'>
+      <i class="fa fa-user"></i>
+      <span class="entry-title" data-bind="entry.title"></span>
+    </span>
+    <span class="entry-when" data-bind="entry.when"></span>
+  </li>
+</ul>
+<p class="conditional-more-info" data-bind="conditional_more_info"></p>
+<p class="more-info" data-bind="moreinfo"></p>
+<p class="updated-at" data-bind="updatedAtMessage" data-hideif="error"></p>
+<p class="updated-at fa fa-warning" data-showif="error"> Update failed</p>

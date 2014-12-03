@@ -1,0 +1,67 @@
+// ----------------------------------------------------------------------------
+// Sass declarations
+// ----------------------------------------------------------------------------
+$background-color:  #ff9618;
+
+$title-color:       rgba(255, 255, 255, 0.7);
+$moreinfo-color:    rgba(255, 255, 255, 0.7);
+
+// ----------------------------------------------------------------------------
+// Widget-list styles
+// ----------------------------------------------------------------------------
+.widget-gcal {
+
+  background-color: $background-color;
+  vertical-align: top;
+
+  .title {
+    color: $title-color;
+  }
+
+  ul#events {
+    padding-left: 5px;
+    padding-right: 5px;
+    
+    text-align: left;
+
+    .entry-title-span {
+      display: inline-block;
+      max-width: 50%;
+    }
+
+    .entry-title, .entry-when {
+      display: inline-block;
+    }
+
+    .entry-when {
+      max-width: 49%;
+      max-height: 1px;
+      color: darken(#ffffff, 10%);
+      font-size: 14px;
+      float: right;
+      padding-top: 5px;
+      text-align: right;
+    }
+    
+    i{
+      color: $title-color;
+    }
+  }
+
+  li {
+    margin-bottom: 7px;
+    padding-bottom: 5px;
+    #border-bottom: 1px solid #fff;
+  }
+  
+
+  .updated-at {
+    color: rgba(0, 0, 0, 0.3);
+
+  }
+
+  .more-info {
+    color: $moreinfo-color;
+  }
+
+}
